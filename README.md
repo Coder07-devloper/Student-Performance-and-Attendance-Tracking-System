@@ -361,25 +361,6 @@ curl -X POST http://localhost:5000/api/performance/marks/YOUR_STUDENT_ID \
   -d '{"marks":{"math":85,"science":90,"english":78}}'
 ```
 
-## 📚 Key Concepts Explained
-
-### Why Separate Models?
-
-- **Student Model:** Stores basic info (name, roll number, class) - rarely changes
-- **Performance Model:** Stores academic data (marks, attendance) - changes frequently
-- This separation makes updates easier and keeps data organized
-
-### Why Controllers Separate from Routes?
-
-- **Routes:** Define URLs and HTTP methods (thin layer)
-- **Controllers:** Handle business logic (thick layer)
-- Makes code easier to test, maintain, and understand
-
-### Why Calculate Average in Backend?
-
-- Ensures consistency across all clients
-- Prevents frontend manipulation
-- Centralized validation and error handling
 
 ## 🔍 Project Features Checklist
 
@@ -390,32 +371,4 @@ curl -X POST http://localhost:5000/api/performance/marks/YOUR_STUDENT_ID \
 - ✅ Classify performance status (Excellent, Good, Average, Poor)
 - ✅ Identify students with low attendance
 - ✅ Fetch student performance summary via APIs
-
-## 📖 Learning Resources
-
-This project demonstrates:
-- RESTful API design
-- MongoDB schema design
-- Express.js routing and middleware
-- Separation of concerns (routes, controllers, models)
-- Error handling
-- Data validation
-- Business logic implementation
-
-## 🤝 Contributing
-
-This is a learning project. Feel free to:
-- Add more features
-- Improve error handling
-- Add input validation
-- Create a frontend interface
-- Add unit tests
-
-## 📄 License
-
-This project is for educational purposes.
-
----
-
-**Happy Learning! 🎓**
 
