@@ -1,0 +1,283 @@
+.low-attendance-page {
+  padding: 2rem 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+/* Threshold Control */
+.threshold-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.threshold-control label {
+  color: #333;
+  font-weight: 500;
+}
+
+.threshold-input {
+  width: 80px;
+  padding: 0.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.threshold-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Info Banner */
+.info-banner {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info-banner p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.info-banner .count {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+/* Students List */
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.student-alert-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 1.5rem;
+  align-items: center;
+  border-left: 4px solid #ff9800;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-alert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.alert-number {
+  width: 40px;
+  height: 40px;
+  background: #ff9800;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.student-info {
+  flex: 1;
+}
+
+.student-info h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.student-details {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.detail-item {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.attendance-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.attendance-badge {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.attendance-badge.low {
+  background: #ff9800;
+}
+
+.performance-status {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+.status {
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.status.excellent {
+  color: #4caf50;
+  background: #e8f5e9;
+}
+
+.status.good {
+  color: #2196f3;
+  background: #e3f2fd;
+}
+
+.status.average {
+  color: #ff9800;
+  background: #fff3e0;
+}
+
+.status.poor {
+  color: #f44336;
+  background: #ffebee;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn-view {
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-view:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.empty-state h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Common Styles */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.error {
+  border-left: 4px solid #f44336;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .student-alert-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .attendance-info {
+    margin: 1rem 0;
+  }
+
+  .student-details {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .threshold-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
